@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const posts = [
+  {
+    slug: 'personalized-gifts',
+    title: 'Why Personalized Gifts Are More Meaningful Than Generic Ones',
+    date: 'April 2026',
+    excerpt: 'Discover the psychology behind why personalized gifts create deeper emotional connections — and how AI makes them accessible to everyone.',
+  },
+];
+---
+<Layout title="Blog" description="Tips, insights, and stories from Personalized You.">
+  <div style="max-width:700px;margin:0 auto;padding:4rem 2rem;">
+    <h1 style="font-size:2.5rem;font-weight:800;margin-bottom:0.75rem;text-align:center;">Blog</h1>
+    <p style="color:#a8b8d0;text-align:center;margin-bottom:3rem;">Tips, insights, and stories from Personalized You.</p>
+
+    <div style="display:flex;flex-direction:column;gap:1.5rem;">
+      {posts.map(post => (
+        <a href={`/blog/${post.slug}`} style="display:block;background:#0d1f3c;border:1px solid #1e3a5f;border-radius:16px;padding:2rem;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#ffd700'" onmouseout="this.style.borderColor='#1e3a5f'">
+          <p style="color:#6b7c9e;font-size:0.875rem;margin-bottom:0.5rem;">{post.date}</p>
+          <h2 style="color:#ffd700;font-size:1.3rem;margin-bottom:0.75rem;">{post.title}</h2>
+          <p style="color:#a8b8d0;line-height:1.6;">{post.excerpt}</p>
+          <p style="color:#ffd700;margin-top:1rem;font-weight:600;">Read more →</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>

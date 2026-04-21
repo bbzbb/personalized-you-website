@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Personalized Bedtime Stories" description="Custom AI-written children's bedtime stories starring your child. Starting at $9.99.">
+  <div style="max-width:800px;margin:0 auto;padding:4rem 2rem;">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <div style="font-size:3rem;margin-bottom:1rem;">📖</div>
+      <h1 style="font-size:2.5rem;font-weight:800;margin-bottom:1rem;">Personalized Bedtime Stories</h1>
+      <p style="font-size:1.15rem;color:#a8b8d0;max-width:560px;margin:0 auto;">
+        A one-of-a-kind children's story starring your child by name, featuring their interests and imagination.
+      </p>
+    </div>
+
+    <section style="margin-bottom:3rem;">
+      <h2 style="color:#ffd700;font-size:1.5rem;margin-bottom:1.5rem;text-align:center;">How It Works</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;">
+        {[
+          { n: '1', icon: '✏️', title: 'Tell us about your child', body: "Share their name, age, favorite things, and any themes you'd like." },
+          { n: '2', icon: '✨', title: 'We craft the story', body: 'Our AI creates a fully personalized narrative just for your child.' },
+          { n: '3', icon: '📬', title: 'Delivered to your inbox', body: 'Receive your story as a PDF, ready to read or print.' },
+        ].map(s => (
+          <div style="background:#0d1f3c;border:1px solid #1e3a5f;border-radius:12px;padding:1.5rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:0.5rem;">{s.icon}</div>
+            <div style="color:#ffd700;font-weight:700;font-size:0.85rem;letter-spacing:0.1em;margin-bottom:0.5rem;">STEP {s.n}</div>
+            <h3 style="font-size:1rem;margin-bottom:0.5rem;">{s.title}</h3>
+            <p style="color:#a8b8d0;font-size:0.9rem;line-height:1.6;">{s.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section style="background:#0d1f3c;border:1px solid #1e3a5f;border-radius:16px;padding:2rem;text-align:center;margin-bottom:3rem;">
+      <h2 style="color:#ffd700;margin-bottom:0.75rem;">Pricing</h2>
+      <p style="font-size:2rem;font-weight:800;margin-bottom:0.5rem;">Starting at $9.99</p>
+      <p style="color:#a8b8d0;">Delivered as a PDF within 24 hours</p>
+    </section>
+
+    <div style="text-align:center;">
+      <a href="https://www.etsy.com" target="_blank" rel="noopener noreferrer"
+        style="display:inline-block;background:#ffd700;color:#0a1628;font-weight:700;padding:1rem 2.5rem;border-radius:8px;font-size:1.1rem;">
+        Order on Etsy
+      </a>
+      <p style="color:#6b7c9e;margin-top:1rem;font-size:0.875rem;">Secure checkout via Etsy</p>
+    </div>
+  </div>
+</Layout>

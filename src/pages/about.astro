@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="About Us" description="Learn about Personalized You — our mission to make meaningful AI-powered personalized experiences accessible and affordable.">
+  <div style="max-width:700px;margin:0 auto;padding:4rem 2rem;">
+    <h1 style="font-size:2.5rem;font-weight:800;margin-bottom:2rem;text-align:center;">About <span style="color:#ffd700">Personalized You</span></h1>
+
+    <div style="background:#0d1f3c;border:1px solid #1e3a5f;border-radius:16px;padding:2.5rem;line-height:1.8;color:#cdd6f4;">
+      <p style="margin-bottom:1.5rem;">
+        We're a small business with a big belief: the most meaningful gifts aren't found on a shelf — they're created specifically for the person receiving them.
+      </p>
+      <p style="margin-bottom:1.5rem;">
+        Personalized You was born from a simple observation: most digital products are generic. A meditation audio sounds the same for everyone. A children's story uses the same characters. We thought: <em style="color:#ffd700">what if it didn't have to be that way?</em>
+      </p>
+      <p style="margin-bottom:1.5rem;">
+        Using the latest AI technology, we craft experiences that are tailored to the individual — a bedtime story where <em>your</em> child is the hero, or a guided meditation that speaks to <em>your</em> exact goals and struggles.
+      </p>
+      <p style="margin-bottom:1.5rem;">
+        Our mission: <strong style="color:#ffd700">Making meaningful personalized experiences accessible and affordable.</strong>
+      </p>
+      <p>
+        Every product is reviewed for quality before delivery. We believe technology should feel human — and when it's done right, it does.
+      </p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;margin-top:2.5rem;text-align:center;">
+      {[
+        { icon: '❤️', label: 'Made with care' },
+        { icon: '🤖', label: 'AI-powered' },
+        { icon: '⚡', label: 'Fast delivery' },
+        { icon: '💰', label: 'Affordable prices' },
+      ].map(v => (
+        <div style="background:#0d1f3c;border:1px solid #1e3a5f;border-radius:12px;padding:1.25rem;">
+          <div style="font-size:2rem;margin-bottom:0.5rem;">{v.icon}</div>
+          <p style="color:#a8b8d0;font-size:0.9rem;">{v.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>

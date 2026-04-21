@@ -1,0 +1,62 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = 'Personalized AI-powered digital products made just for you.' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} | Personalized You</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: system-ui, -apple-system, sans-serif; background: #0a1628; color: #fff; min-height: 100vh; display: flex; flex-direction: column; }
+      a { color: #ffd700; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      nav { background: #0d1f3c; border-bottom: 1px solid #1e3a5f; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+      .nav-logo { font-size: 1.25rem; font-weight: 700; color: #ffd700; }
+      .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+      .nav-links a { color: #cdd6f4; font-size: 0.95rem; transition: color 0.2s; }
+      .nav-links a:hover { color: #ffd700; text-decoration: none; }
+      .hamburger { display: none; background: none; border: none; cursor: pointer; color: #ffd700; font-size: 1.5rem; }
+      main { flex: 1; }
+      footer { background: #0d1f3c; border-top: 1px solid #1e3a5f; text-align: center; padding: 1.5rem; color: #6b7c9e; font-size: 0.875rem; }
+      @media (max-width: 768px) {
+        .hamburger { display: block; }
+        .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: #0d1f3c; flex-direction: column; padding: 1rem 2rem; gap: 1rem; border-bottom: 1px solid #1e3a5f; }
+        .nav-links.open { display: flex; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a class="nav-logo" href="/">Personalized You</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/bedtime-stories">Stories</a></li>
+        <li><a href="/meditation">Meditation</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>© 2026 Personalized You &nbsp;·&nbsp; <a href="/policies">Privacy & Terms</a> &nbsp;·&nbsp; <a href="/faq">FAQ</a></p>
+    </footer>
+    <script>
+      const btn = document.getElementById('hamburger');
+      const links = document.getElementById('nav-links');
+      btn?.addEventListener('click', () => links?.classList.toggle('open'));
+    </script>
+  </body>
+</html>
