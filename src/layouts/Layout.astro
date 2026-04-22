@@ -2,8 +2,20 @@
 export interface Props {
   title: string;
   description?: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+  schema?: object;
 }
-const { title, description = 'Personalized AI-powered digital products made just for you.' } = Astro.props;
+const {
+  title,
+  description = 'Personalized AI-powered digital products made just for you.',
+  canonical,
+  ogImage = 'https://www.personalized-you.com/og-default.jpg',
+  ogType = 'website',
+  schema,
+} = Astro.props;
+const canonicalUrl = canonical ?? `https://www.personalized-you.com${Astro.url.pathname}`;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -12,8 +24,26 @@ const { title, description = 'Personalized AI-powered digital products made just
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title} | Personalized You</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={`${title} | Personalized You`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Personalized You" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} | Personalized You`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- JSON-LD structured data -->
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
     <style>
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       :root {
