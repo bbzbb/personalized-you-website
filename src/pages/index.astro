@@ -4,27 +4,50 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Home" description="Personalized AI-powered digital gifts — bedtime stories and guided meditation made just for you.">
   <section style="text-align:center;padding:5rem 2rem 3rem;max-width:800px;margin:0 auto;">
     <h1 style="font-size:clamp(2rem,5vw,3.5rem);font-weight:800;line-height:1.15;margin-bottom:1rem;">
-      Personalized gifts that <span style="color:#ffd700">actually mean something</span>
+      The gift they'll never forget —<br><span style="color:#ffd700">because it's only theirs</span>
     </h1>
     <p style="font-size:1.2rem;color:#a8b8d0;max-width:560px;margin:0 auto 2.5rem;">
-      AI-powered digital products made just for you — crafted with care, delivered to your inbox.
+      AI-crafted stories and meditations made for one person — yours.
     </p>
     <a href="/bedtime-stories" style="display:inline-block;background:#ffd700;color:#0a1628;font-weight:700;padding:0.875rem 2rem;border-radius:8px;font-size:1rem;margin-right:1rem;margin-bottom:1rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Explore Stories</a>
     <a href="/meditation" style="display:inline-block;border:2px solid #ffd700;color:#ffd700;font-weight:700;padding:0.875rem 2rem;border-radius:8px;font-size:1rem;margin-bottom:1rem;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,215,0,0.1)'" onmouseout="this.style.background='transparent'">Explore Meditation</a>
   </section>
 
+  <section style="max-width:900px;margin:0 auto;padding:0 2rem 4rem;">
+    <h2 style="text-align:center;font-size:1.4rem;font-weight:700;margin-bottom:2rem;color:#e8f0fe;">What are you looking for?</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;">
+      <a href="/bedtime-stories" style="display:block;background:#0d1f3c;border:1px solid #1e3a5f;border-radius:12px;padding:1.5rem;text-align:center;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#ffd700'" onmouseout="this.style.borderColor='#1e3a5f'">
+        <div style="font-size:2rem;margin-bottom:0.75rem;">📖</div>
+        <p style="color:#e8f0fe;font-weight:600;margin-bottom:0.25rem;">A bedtime story for my child</p>
+        <p style="color:#a8b8d0;font-size:0.85rem;">Starring them by name</p>
+      </a>
+      <a href="/meditation" style="display:block;background:#0d1f3c;border:1px solid #1e3a5f;border-radius:12px;padding:1.5rem;text-align:center;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#ffd700'" onmouseout="this.style.borderColor='#1e3a5f'">
+        <div style="font-size:2rem;margin-bottom:0.75rem;">🧘</div>
+        <p style="color:#e8f0fe;font-weight:600;margin-bottom:0.25rem;">A meditation just for me</p>
+        <p style="color:#a8b8d0;font-size:0.85rem;">Built around your life, not a template</p>
+      </a>
+      <a href="/bedtime-stories" style="display:block;background:#0d1f3c;border:1px solid #1e3a5f;border-radius:12px;padding:1.5rem;text-align:center;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#ffd700'" onmouseout="this.style.borderColor='#1e3a5f'">
+        <div style="font-size:2rem;margin-bottom:0.75rem;">🎁</div>
+        <p style="color:#e8f0fe;font-weight:600;margin-bottom:0.25rem;">A thoughtful gift</p>
+        <p style="color:#a8b8d0;font-size:0.85rem;">Something they'll never already have</p>
+      </a>
+    </div>
+  </section>
+
   <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;max-width:900px;margin:0 auto;padding:0 2rem 5rem;">
     <a href="/bedtime-stories" style="display:block;background:#0d1f3c;border:1px solid #1e3a5f;border-radius:16px;padding:2rem;transition:border-color 0.2s;text-decoration:none;" onmouseover="this.style.borderColor='#ffd700'" onmouseout="this.style.borderColor='#1e3a5f'">
       <div style="font-size:2.5rem;margin-bottom:1rem;">📖</div>
-      <h2 style="color:#ffd700;font-size:1.4rem;margin-bottom:0.75rem;">Personalized Bedtime Stories</h2>
-      <p style="color:#a8b8d0;line-height:1.6;">Custom AI-written children's stories starring your child. Perfect for bedtime, birthdays, or just because.</p>
-      <p style="color:#ffd700;margin-top:1rem;font-weight:600;">Starting at $9.99 →</p>
+      <h2 style="color:#ffd700;font-size:1.4rem;margin-bottom:0.5rem;">Personalized Bedtime Stories</h2>
+      <p style="color:#ffd700;font-size:1.75rem;font-weight:800;margin-bottom:0.5rem;">From $9.99</p>
+      <p style="color:#a8b8d0;line-height:1.6;font-size:0.95rem;">Your child is the hero. Their name, their interests, their adventure — delivered in 24 hours.</p>
+      <p style="color:#ffd700;margin-top:1.25rem;font-weight:600;font-size:0.95rem;">Order on Etsy →</p>
     </a>
     <a href="/meditation" style="display:block;background:#0d1f3c;border:1px solid #1e3a5f;border-radius:16px;padding:2rem;transition:border-color 0.2s;text-decoration:none;" onmouseover="this.style.borderColor='#ffd700'" onmouseout="this.style.borderColor='#1e3a5f'">
       <div style="font-size:2.5rem;margin-bottom:1rem;">🧘</div>
-      <h2 style="color:#ffd700;font-size:1.4rem;margin-bottom:0.75rem;">Personalized Guided Meditation</h2>
-      <p style="color:#a8b8d0;line-height:1.6;">Custom guided meditation audio tailored to your goals, challenges, and intentions.</p>
-      <p style="color:#ffd700;margin-top:1rem;font-weight:600;">Starting at $9.99 →</p>
+      <h2 style="color:#ffd700;font-size:1.4rem;margin-bottom:0.5rem;">Personalized Guided Meditation</h2>
+      <p style="color:#ffd700;font-size:1.75rem;font-weight:800;margin-bottom:0.5rem;">From $9.99</p>
+      <p style="color:#a8b8d0;line-height:1.6;font-size:0.95rem;">Custom audio built around your goals and what's weighing on you — not a generic playlist.</p>
+      <p style="color:#ffd700;margin-top:1.25rem;font-weight:600;font-size:0.95rem;">Get it now →</p>
     </a>
   </section>
 </Layout>

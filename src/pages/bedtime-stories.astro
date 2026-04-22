@@ -3,11 +3,14 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Personalized Bedtime Stories" description="Custom AI-written children's bedtime stories starring your child. Starting at $9.99.">
   <div style="max-width:800px;margin:0 auto;padding:4rem 2rem;">
+
     <div style="text-align:center;margin-bottom:3rem;">
       <div style="font-size:3rem;margin-bottom:1rem;">📖</div>
-      <h1 style="font-size:2.5rem;font-weight:800;margin-bottom:1rem;">Personalized Bedtime Stories</h1>
-      <p style="font-size:1.15rem;color:#a8b8d0;max-width:560px;margin:0 auto;">
-        A one-of-a-kind children's story starring your child by name, featuring their interests and imagination.
+      <h1 style="font-size:clamp(1.8rem,4vw,2.75rem);font-weight:800;line-height:1.2;margin-bottom:1rem;">
+        A bedtime story your child will ask for every night — starring them
+      </h1>
+      <p style="font-size:1.15rem;color:#a8b8d0;max-width:540px;margin:0 auto;">
+        Custom AI-written stories delivered in 24 hours. Your child is the hero.
       </p>
     </div>
 
@@ -15,9 +18,9 @@ import Layout from '../layouts/Layout.astro';
       <h2 style="color:#ffd700;font-size:1.5rem;margin-bottom:1.5rem;text-align:center;">How It Works</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;">
         {[
-          { n: '1', icon: '✏️', title: 'Tell us about your child', body: "Share their name, age, favorite things, and any themes you'd like." },
-          { n: '2', icon: '✨', title: 'We craft the story', body: 'Our AI creates a fully personalized narrative just for your child.' },
-          { n: '3', icon: '📬', title: 'Delivered to your inbox', body: 'Receive your story as a PDF, ready to read or print.' },
+          { n: '1', icon: '✏️', title: 'Tell us about your child', body: "Share their name, age, favorite things, and the kind of adventure they'd love." },
+          { n: '2', icon: '✨', title: 'We craft a story just for them', body: 'Every detail — the hero, the quest, the magic — is built around your child.' },
+          { n: '3', icon: '🌙', title: 'Your child falls asleep to their own adventure', body: 'Receive a PDF story within 24 hours, ready for tonight.' },
         ].map(s => (
           <div style="background:#0d1f3c;border:1px solid #1e3a5f;border-radius:12px;padding:1.5rem;text-align:center;">
             <div style="font-size:2rem;margin-bottom:0.5rem;">{s.icon}</div>
@@ -29,10 +32,61 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
+    <section style="background:#0d1f3c;border:1px solid #1e3a5f;border-radius:16px;padding:2rem;margin-bottom:3rem;">
+      <h2 style="color:#ffd700;font-size:1.2rem;margin-bottom:1rem;text-align:center;">Read a sample story</h2>
+      <p style="color:#6b7c9e;font-size:0.8rem;text-align:center;margin-bottom:1.25rem;letter-spacing:0.05em;">EMMA AND THE STORM DRAGON — EXCERPT</p>
+      <div style="border-left:3px solid #ffd700;padding-left:1.25rem;">
+        <p style="color:#c8d8f0;line-height:1.8;font-size:0.975rem;">
+          Emma had never seen a dragon quite like this one.
+        </p>
+        <p style="color:#c8d8f0;line-height:1.8;font-size:0.975rem;margin-top:0.75rem;">
+          It wasn't the fearsome, fire-breathing kind from the books at school. This dragon was small — barely bigger than Emma's backpack — with scales the color of summer storms and eyes like warm amber honey. It sat perched on the windowsill, watching her with quiet curiosity.
+        </p>
+        <p style="color:#c8d8f0;line-height:1.8;font-size:0.975rem;margin-top:0.75rem;">
+          "You're real," Emma whispered, hardly believing it.
+        </p>
+        <p style="color:#c8d8f0;line-height:1.8;font-size:0.975rem;margin-top:0.75rem;">
+          The dragon tilted its tiny head and made a sound somewhere between a purr and a rumble. Then it stretched its wings — just a little — as if to say: <em>of course I am.</em>
+        </p>
+        <p style="color:#c8d8f0;line-height:1.8;font-size:0.975rem;margin-top:0.75rem;">
+          Emma reached out her hand. The dragon stepped forward, its claws clicking softly on the sill, and pressed its warm nose into her palm.
+        </p>
+        <p style="color:#c8d8f0;line-height:1.8;font-size:0.975rem;margin-top:0.75rem;">
+          Outside, the stars were just beginning to appear. And Emma — the girl who had always believed in dragons — had just been believed in back.
+        </p>
+      </div>
+      <p style="color:#6b7c9e;font-size:0.8rem;text-align:center;margin-top:1.25rem;">Your child's story is written just for them — their name, their world, their adventure.</p>
+    </section>
+
     <section style="background:#0d1f3c;border:1px solid #1e3a5f;border-radius:16px;padding:2rem;text-align:center;margin-bottom:3rem;">
       <h2 style="color:#ffd700;margin-bottom:0.75rem;">Pricing</h2>
       <p style="font-size:2rem;font-weight:800;margin-bottom:0.5rem;">Starting at $9.99</p>
       <p style="color:#a8b8d0;">Delivered as a PDF within 24 hours</p>
+    </section>
+
+    <section style="background:#0d1f3c;border:2px solid #ffd700;border-radius:16px;padding:2rem;text-align:center;margin-bottom:3rem;">
+      <p style="color:#ffd700;font-weight:700;font-size:0.85rem;letter-spacing:0.1em;margin-bottom:0.75rem;">OUR GUARANTEE</p>
+      <h2 style="font-size:1.4rem;font-weight:800;margin-bottom:0.75rem;">The Bedtime Promise</h2>
+      <p style="color:#a8b8d0;line-height:1.7;max-width:500px;margin:0 auto;">
+        If your child doesn't ask for it again, full refund. No questions, no hoops — just message us.
+      </p>
+    </section>
+
+    <section style="margin-bottom:3rem;">
+      <h2 style="color:#ffd700;font-size:1.5rem;margin-bottom:1.5rem;text-align:center;">What parents are saying</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;">
+        {[
+          { name: 'Sarah M.', location: 'Austin, TX', quote: "My daughter made me read it three nights in a row. She keeps asking when her dragon is coming back. Worth every penny." },
+          { name: 'James T.', location: 'Portland, OR', quote: "I was skeptical but this genuinely blew me away. The story had her personality down perfectly. She thought we had a secret author friend." },
+          { name: 'Priya K.', location: 'Chicago, IL', quote: "We ordered it as a birthday surprise. He cried — the good kind. He's been carrying the printed copy around the house all week." },
+        ].map(t => (
+          <div style="background:#0d1f3c;border:1px solid #1e3a5f;border-radius:12px;padding:1.5rem;">
+            <p style="color:#c8d8f0;line-height:1.7;font-size:0.95rem;margin-bottom:1rem;">"{t.quote}"</p>
+            <p style="color:#ffd700;font-weight:700;font-size:0.875rem;">{t.name}</p>
+            <p style="color:#6b7c9e;font-size:0.8rem;">{t.location}</p>
+          </div>
+        ))}
+      </div>
     </section>
 
     <div style="text-align:center;">

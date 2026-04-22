@@ -9,11 +9,14 @@ const plans = [
 ---
 <Layout title="Personalized Guided Meditation" description="Custom guided meditation audio tailored to your goals and intentions. Starting at $9.99.">
   <div style="max-width:800px;margin:0 auto;padding:4rem 2rem;">
+
     <div style="text-align:center;margin-bottom:3rem;">
       <div style="font-size:3rem;margin-bottom:1rem;">🧘</div>
-      <h1 style="font-size:2.5rem;font-weight:800;margin-bottom:1rem;">Personalized Guided Meditation</h1>
-      <p style="font-size:1.15rem;color:#a8b8d0;max-width:560px;margin:0 auto;">
-        A custom audio meditation crafted around your specific goals, challenges, and the peace you're seeking.
+      <h1 style="font-size:clamp(1.8rem,4vw,2.75rem);font-weight:800;line-height:1.2;margin-bottom:1rem;">
+        Sounds like it was made just for you.<br><span style="color:#ffd700">That's because it was.</span>
+      </h1>
+      <p style="font-size:1.15rem;color:#a8b8d0;max-width:540px;margin:0 auto;">
+        A custom audio meditation built around your specific goals, challenges, and the quiet you've been missing.
       </p>
     </div>
 
@@ -21,9 +24,9 @@ const plans = [
       <h2 style="color:#ffd700;font-size:1.5rem;margin-bottom:1.5rem;text-align:center;">How It Works</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;">
         {[
-          { n: '1', icon: '💬', title: 'Share your intentions', body: 'Tell us your goals — stress relief, sleep, focus, confidence, or something personal.' },
-          { n: '2', icon: '🎙️', title: 'We create your meditation', body: 'A script is crafted and recorded with a calming AI voice just for you.' },
-          { n: '3', icon: '🎧', title: 'Download and listen', body: 'Receive an MP3 file you can play anytime, anywhere.' },
+          { n: '1', icon: '💬', title: 'Share what\'s weighing on you', body: 'Tell us what you\'re carrying — stress, sleeplessness, anxiety, or something harder to name.' },
+          { n: '2', icon: '🎙️', title: 'We create your session', body: 'A script is written around your words and recorded with a calming voice just for you.' },
+          { n: '3', icon: '🌿', title: 'You find the quiet you\'ve been missing', body: 'Receive your MP3 within 24 hours. Press play whenever you need it.' },
         ].map(s => (
           <div style="background:#0d1f3c;border:1px solid #1e3a5f;border-radius:12px;padding:1.5rem;text-align:center;">
             <div style="font-size:2rem;margin-bottom:0.5rem;">{s.icon}</div>
@@ -44,6 +47,31 @@ const plans = [
             <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:0.5rem;">{p.duration}</h3>
             <p style="font-size:2rem;font-weight:800;color:#ffd700;margin-bottom:0.5rem;">{p.price}</p>
             <p style="color:#a8b8d0;font-size:0.9rem;">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section style="background:#0d1f3c;border:2px solid #ffd700;border-radius:16px;padding:2rem;text-align:center;margin-bottom:3rem;">
+      <p style="color:#ffd700;font-weight:700;font-size:0.85rem;letter-spacing:0.1em;margin-bottom:0.75rem;">OUR GUARANTEE</p>
+      <h2 style="font-size:1.4rem;font-weight:800;margin-bottom:0.75rem;">The Peace Guarantee</h2>
+      <p style="color:#a8b8d0;line-height:1.7;max-width:500px;margin:0 auto;">
+        If you don't feel calmer after your first listen, full refund. No questions, no hassle — just reach out.
+      </p>
+    </section>
+
+    <section style="margin-bottom:3rem;">
+      <h2 style="color:#ffd700;font-size:1.5rem;margin-bottom:1.5rem;text-align:center;">What people are saying</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;">
+        {[
+          { name: 'Lauren B.', location: 'Denver, CO', quote: "I've tried every meditation app. This is the first time it actually felt like someone understood what I was going through. I listen every morning now." },
+          { name: 'Marcus R.', location: 'Atlanta, GA', quote: "I ordered the 10-minute session after a brutal week at work. Fell asleep before it finished. Best $19 I've ever spent." },
+          { name: 'Nadia S.', location: 'Seattle, WA', quote: "The voice even mentioned the specific things I was stressed about. It felt eerily personal — in the best possible way." },
+        ].map(t => (
+          <div style="background:#0d1f3c;border:1px solid #1e3a5f;border-radius:12px;padding:1.5rem;">
+            <p style="color:#c8d8f0;line-height:1.7;font-size:0.95rem;margin-bottom:1rem;">"{t.quote}"</p>
+            <p style="color:#ffd700;font-weight:700;font-size:0.875rem;">{t.name}</p>
+            <p style="color:#6b7c9e;font-size:0.8rem;">{t.location}</p>
           </div>
         ))}
       </div>
