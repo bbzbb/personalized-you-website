@@ -3,38 +3,38 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Contact Us" description="Get in touch with Personalized You — we'd love to hear from you.">
   <div style="max-width:600px;margin:0 auto;padding:4rem 2rem;">
-    <h1 style="font-size:2.5rem;font-weight:800;margin-bottom:0.75rem;text-align:center;">Contact Us</h1>
-    <p style="color:#7a7068;text-align:center;margin-bottom:2.5rem;">Have a question or special request? We'd love to hear from you.</p>
+    <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:0.75rem;text-align:center;color:#b07d50;">Contact Us</h1>
+    <p style="color:#7a6a5a;text-align:center;margin-bottom:2.5rem;">Have a question or special request? We'd love to hear from you.</p>
 
     <!-- Formspree endpoint — register at formspree.io to activate -->
     <form id="contact-form" action="https://formspree.io/f/xzzbnwod" method="POST"
-      style="background:#eeebe6;border:1px solid #d9d3cc;border-radius:16px;padding:2rem;display:flex;flex-direction:column;gap:1.25rem;">
+      style="background:#e8d9c5;border:1px solid #d9cfc4;border-radius:16px;padding:2rem;display:flex;flex-direction:column;gap:1.25rem;">
       <input type="hidden" name="_replyto" value="contact form submission" />
       <div>
-        <label style="display:block;color:#7a7068;font-size:0.875rem;margin-bottom:0.4rem;" for="name">Your Name</label>
+        <label style="display:block;color:#7a6a5a;font-size:0.875rem;margin-bottom:0.4rem;" for="name">Your Name</label>
         <input id="name" name="name" type="text" required
-          style="width:100%;background:#f5f0eb;border:1px solid #d9d3cc;border-radius:8px;padding:0.75rem 1rem;color:#2c2c2c;font-size:1rem;outline:none;"
-          onfocus="this.style.borderColor='#8aab8e'" onblur="this.style.borderColor='#d9d3cc'" />
+          style="width:100%;background:#ffffff;border:1px solid #d9cfc4;border-radius:8px;padding:0.75rem 1rem;color:#3a2e28;font-size:1rem;outline:none;"
+          onfocus="this.style.borderColor='#7a9e7e'" onblur="this.style.borderColor='#d9cfc4'" />
       </div>
       <div>
-        <label style="display:block;color:#7a7068;font-size:0.875rem;margin-bottom:0.4rem;" for="email">Your Email</label>
+        <label style="display:block;color:#7a6a5a;font-size:0.875rem;margin-bottom:0.4rem;" for="email">Your Email</label>
         <input id="email" name="email" type="email" required
-          style="width:100%;background:#f5f0eb;border:1px solid #d9d3cc;border-radius:8px;padding:0.75rem 1rem;color:#2c2c2c;font-size:1rem;outline:none;"
-          onfocus="this.style.borderColor='#8aab8e'" onblur="this.style.borderColor='#d9d3cc'" />
+          style="width:100%;background:#ffffff;border:1px solid #d9cfc4;border-radius:8px;padding:0.75rem 1rem;color:#3a2e28;font-size:1rem;outline:none;"
+          onfocus="this.style.borderColor='#7a9e7e'" onblur="this.style.borderColor='#d9cfc4'" />
       </div>
       <div>
-        <label style="display:block;color:#7a7068;font-size:0.875rem;margin-bottom:0.4rem;" for="message">Message</label>
+        <label style="display:block;color:#7a6a5a;font-size:0.875rem;margin-bottom:0.4rem;" for="message">Message</label>
         <textarea id="message" name="message" rows="5" required
-          style="width:100%;background:#f5f0eb;border:1px solid #d9d3cc;border-radius:8px;padding:0.75rem 1rem;color:#2c2c2c;font-size:1rem;outline:none;resize:vertical;"
-          onfocus="this.style.borderColor='#8aab8e'" onblur="this.style.borderColor='#d9d3cc'"></textarea>
+          style="width:100%;background:#ffffff;border:1px solid #d9cfc4;border-radius:8px;padding:0.75rem 1rem;color:#3a2e28;font-size:1rem;outline:none;resize:vertical;"
+          onfocus="this.style.borderColor='#7a9e7e'" onblur="this.style.borderColor='#d9cfc4'"></textarea>
       </div>
       <button type="submit"
-        style="background:#8aab8e;color:#ffffff;font-weight:700;padding:0.875rem;border-radius:8px;border:none;font-size:1rem;cursor:pointer;">
+        style="background:#7a9e7e;color:#ffffff;font-weight:700;padding:0.875rem;border-radius:2rem;border:none;font-size:1rem;cursor:pointer;">
         Send Message
       </button>
     </form>
 
-    <div id="success-msg" style="display:none;background:#e8c4b8;border:1px solid #c8a96e;border-radius:12px;padding:1.5rem;text-align:center;margin-top:1.5rem;color:#2c2c2c;">
+    <div id="success-msg" style="display:none;background:#e8b4b8;border:1px solid #b07d50;border-radius:12px;padding:1.5rem;text-align:center;margin-top:1.5rem;color:#3a2e28;">
       <strong>Message sent!</strong> We'll get back to you soon.
     </div>
   </div>

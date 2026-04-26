@@ -8,7 +8,7 @@ import Layout from '../layouts/Layout.astro';
     <h1>The first year goes fast.<br><span>This is how you hold onto it.</span></h1>
     <p>Personalized hardcover baby photo albums — handcrafted with love, built to last a lifetime.</p>
     <a href="https://www.etsy.com/shop/PersonalizedYouFinds" target="_blank" rel="noopener noreferrer" class="btn-primary"
-      onmouseover="this.style.background='#6d8e71'" onmouseout="this.style.background='#8aab8e'">Shop on Etsy</a>
+      onmouseover="this.style.background='#5f8463'" onmouseout="this.style.background='#7a9e7e'">Shop on Etsy</a>
   </section>
 
   <!-- Carousel -->
@@ -45,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="cta-section">
     <h2>Ready to preserve every milestone?</h2>
     <a href="https://www.etsy.com/shop/PersonalizedYouFinds" target="_blank" rel="noopener noreferrer" class="btn-primary"
-      onmouseover="this.style.background='#6d8e71'" onmouseout="this.style.background='#8aab8e'">Shop on Etsy</a>
+      onmouseover="this.style.background='#5f8463'" onmouseout="this.style.background='#7a9e7e'">Shop on Etsy</a>
   </section>
 
   <style>
@@ -54,17 +54,17 @@ import Layout from '../layouts/Layout.astro';
       padding: 5rem 2rem 3.5rem;
       max-width: 820px;
       margin: 0 auto;
-      background: linear-gradient(160deg, var(--cream) 0%, var(--bg) 100%);
+      background: var(--cream);
       border-radius: 0 0 24px 24px;
     }
     .hero h1 {
       font-size: clamp(2rem, 5vw, 3.25rem);
-      font-weight: 800;
+      font-weight: 700;
       line-height: 1.2;
       margin-bottom: 1.25rem;
-      color: var(--text);
+      color: var(--latte);
     }
-    .hero h1 span { color: var(--primary); }
+    .hero h1 span { color: var(--sage); }
     .hero p {
       font-size: 1.15rem;
       color: var(--muted);
@@ -73,13 +73,13 @@ import Layout from '../layouts/Layout.astro';
     }
     .btn-primary {
       display: inline-block;
-      background: var(--primary);
+      background: var(--sage);
       color: #fff;
       font-weight: 700;
       padding: 0.9rem 2.25rem;
-      border-radius: 10px;
+      border-radius: 2rem;
       font-size: 1rem;
-      box-shadow: 0 4px 14px rgba(138,171,142,0.35);
+      box-shadow: 0 4px 14px rgba(122,158,126,0.35);
       text-decoration: none;
       transition: background 0.2s;
     }
@@ -108,7 +108,7 @@ import Layout from '../layouts/Layout.astro';
       display: block;
     }
     .peek-section {
-      background: var(--surface);
+      background: var(--lilac);
       padding: 4rem 2rem;
     }
     .peek-inner {
@@ -116,7 +116,7 @@ import Layout from '../layouts/Layout.astro';
       margin: 0 auto;
     }
     .peek-caption {
-      background: var(--lavender);
+      background: var(--lilac);
       border-radius: 12px;
       padding: 1.5rem 2rem;
       text-align: center;
@@ -124,8 +124,8 @@ import Layout from '../layouts/Layout.astro';
     }
     .peek-caption h2 {
       font-size: 1.75rem;
-      font-weight: 800;
-      color: var(--text);
+      font-weight: 700;
+      color: var(--latte);
       margin-bottom: 0.5rem;
     }
     .peek-caption p { color: var(--text); }
@@ -144,15 +144,15 @@ import Layout from '../layouts/Layout.astro';
     .cta-section {
       text-align: center;
       padding: 4rem 2rem;
-      background: var(--cream);
+      background: var(--yellow);
     }
     .cta-section h2 {
       font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--text);
+      font-weight: 700;
+      color: var(--latte);
       margin-bottom: 1.25rem;
       padding-bottom: 0.5rem;
-      border-bottom: 2px solid var(--gold);
+      border-bottom: 2px solid var(--latte);
       display: inline-block;
     }
     @media (max-width: 768px) {
