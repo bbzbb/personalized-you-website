@@ -12,16 +12,16 @@ const posts = [
 ---
 <Layout title="Blog" description="Tips, insights, and stories from Personalized You.">
   <div style="max-width:700px;margin:0 auto;padding:4rem 2rem;">
-    <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:0.75rem;text-align:center;color:#b07d50;">Blog</h1>
-    <p style="color:#7a6a5a;text-align:center;margin-bottom:3rem;">Tips, insights, and stories from Personalized You.</p>
+    <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:0.75rem;text-align:center;color:var(--latte);">Blog</h1>
+    <p style="color:var(--muted);text-align:center;margin-bottom:3rem;">Tips, insights, and stories from Personalized You.</p>
 
     <div style="display:flex;flex-direction:column;gap:1.5rem;">
       {posts.map(post => (
-        <a href={`/blog/${post.slug}`} style="display:block;background:#b8cce4;border:1px solid #d9cfc4;border-radius:16px;padding:2rem;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#7a9e7e'" onmouseout="this.style.borderColor='#d9cfc4'">
-          <p style="color:#7a6a5a;font-size:0.875rem;margin-bottom:0.5rem;">{post.date} · 5 min read</p>
-          <h2 style="color:#b07d50;font-size:1.3rem;font-weight:700;margin-bottom:0.75rem;">{post.title}</h2>
-          <p style="color:#7a6a5a;line-height:1.6;">{post.excerpt}</p>
-          <p style="color:#7a9e7e;margin-top:1rem;font-weight:600;">Read more →</p>
+        <a href={`/blog/${post.slug}`} style="display:block;background:var(--blue);border:1px solid var(--border);border-radius:16px;padding:2rem;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#7a9e7e'" onmouseout="this.style.borderColor='#d9cfc4'">
+          <p style="color:var(--muted);font-size:0.875rem;margin-bottom:0.5rem;">{post.date} · 5 min read</p>
+          <h2 style="color:var(--latte);font-size:1.3rem;font-weight:700;margin-bottom:0.75rem;">{post.title}</h2>
+          <p style="color:var(--muted);line-height:1.6;">{post.excerpt}</p>
+          <p style="color:var(--sage);margin-top:1rem;font-weight:600;">Read more →</p>
         </a>
       ))}
     </div>

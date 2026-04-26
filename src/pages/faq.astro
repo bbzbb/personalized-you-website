@@ -38,22 +38,22 @@ const faqs = [
 ---
 <Layout title="FAQ" description="Frequently asked questions about Personalized You products.">
   <div style="max-width:700px;margin:0 auto;padding:4rem 2rem;">
-    <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:0.75rem;text-align:center;color:#b07d50;">Frequently Asked Questions</h1>
-    <p style="color:#7a6a5a;text-align:center;margin-bottom:3rem;">Everything you need to know before ordering.</p>
+    <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:0.75rem;text-align:center;color:var(--latte);">Frequently Asked Questions</h1>
+    <p style="color:var(--muted);text-align:center;margin-bottom:3rem;">Everything you need to know before ordering.</p>
 
     <div style="display:flex;flex-direction:column;gap:1rem;">
       {faqs.map((faq, i) => (
-        <details style="background:#e8d9c5;border:1px solid #d9cfc4;border-radius:12px;padding:1.25rem 1.5rem;cursor:pointer;">
-          <summary style="font-weight:600;font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#3a2e28;">
+        <details style="background:var(--beige);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;cursor:pointer;">
+          <summary style="font-weight:600;font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--text);">
             {faq.q}
-            <span style="color:#7a9e7e;font-size:1.25rem;flex-shrink:0;margin-left:1rem;">+</span>
+            <span style="color:var(--sage);font-size:1.25rem;flex-shrink:0;margin-left:1rem;">+</span>
           </summary>
-          <p style="color:#7a6a5a;margin-top:1rem;line-height:1.7;">{faq.a}</p>
+          <p style="color:var(--muted);margin-top:1rem;line-height:1.7;">{faq.a}</p>
         </details>
       ))}
     </div>
 
-    <p style="text-align:center;margin-top:3rem;color:#7a6a5a;">
+    <p style="text-align:center;margin-top:3rem;color:var(--muted);">
       Still have questions? <a href="/contact">Contact us</a> — we're happy to help.
     </p>
   </div>
