@@ -47,36 +47,36 @@ const canonicalUrl = canonical ?? `https://www.personalized-you.com${Astro.url.p
     <style>
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       :root {
-        --bg: #fdf8f2;
-        --surface: #ffffff;
-        --surface-alt: #f5edff;
-        --border: #e8dff5;
-        --primary: #2d1b69;
-        --primary-light: #7c5cbf;
-        --accent: #ff6b35;
-        --accent-hover: #e85a25;
-        --text: #1a1a2e;
-        --muted: #6b6b8a;
-        --star: #ffb347;
-        --story-bg: #f0eaff;
+        --bg: #f5f0eb;
+        --surface: #eeebe6;
+        --surface-alt: #eeebe6;
+        --border: #d9d3cc;
+        --primary: #8aab8e;
+        --primary-light: #8aab8e;
+        --accent: #8aab8e;
+        --accent-hover: #6d8e71;
+        --text: #2c2c2c;
+        --muted: #7a7068;
+        --star: #8aab8e;
+        --story-bg: #eeebe6;
       }
       body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
       a { color: var(--primary); text-decoration: none; }
       a:hover { text-decoration: underline; }
-      nav { background: var(--primary); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 2px 8px rgba(45,27,105,0.15); }
-      .nav-logo { font-size: 1.25rem; font-weight: 800; color: #ffffff; letter-spacing: -0.01em; }
-      .nav-logo span { color: var(--star); }
+      nav { background: var(--surface); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 2px 8px rgba(44,44,44,0.08); }
+      .nav-logo { font-size: 1.25rem; font-weight: 800; color: #2c2c2c; letter-spacing: -0.01em; }
+      .nav-logo span { color: var(--primary); }
       .nav-links { display: flex; gap: 1.5rem; list-style: none; }
-      .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.95rem; transition: color 0.2s; }
-      .nav-links a:hover { color: #ffffff; text-decoration: none; }
-      .hamburger { display: none; background: none; border: none; cursor: pointer; color: #ffffff; font-size: 1.5rem; }
+      .nav-links a { color: #2c2c2c; font-size: 0.95rem; transition: color 0.2s; }
+      .nav-links a:hover { color: var(--primary); text-decoration: none; }
+      .hamburger { display: none; background: none; border: none; cursor: pointer; color: #2c2c2c; font-size: 1.5rem; }
       main { flex: 1; }
-      footer { background: var(--primary); text-align: center; padding: 1.75rem; color: rgba(255,255,255,0.55); font-size: 0.875rem; }
-      footer a { color: rgba(255,255,255,0.75); }
-      footer a:hover { color: #ffffff; }
+      footer { background: var(--surface); text-align: center; padding: 1.75rem; color: var(--muted); font-size: 0.875rem; }
+      footer a { color: var(--text); }
+      footer a:hover { color: var(--primary); }
       @media (max-width: 768px) {
         .hamburger { display: block; }
-        .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--primary); flex-direction: column; padding: 1rem 2rem; gap: 1rem; border-top: 1px solid rgba(255,255,255,0.1); z-index: 100; }
+        .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--surface); flex-direction: column; padding: 1rem 2rem; gap: 1rem; border-top: 1px solid rgba(44,44,44,0.1); z-index: 100; }
         .nav-links.open { display: flex; }
       }
     </style>

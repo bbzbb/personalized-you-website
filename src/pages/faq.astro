@@ -39,21 +39,21 @@ const faqs = [
 <Layout title="FAQ" description="Frequently asked questions about Personalized You products.">
   <div style="max-width:700px;margin:0 auto;padding:4rem 2rem;">
     <h1 style="font-size:2.5rem;font-weight:800;margin-bottom:0.75rem;text-align:center;">Frequently Asked Questions</h1>
-    <p style="color:#a8b8d0;text-align:center;margin-bottom:3rem;">Everything you need to know before ordering.</p>
+    <p style="color:#7a7068;text-align:center;margin-bottom:3rem;">Everything you need to know before ordering.</p>
 
     <div style="display:flex;flex-direction:column;gap:1rem;">
       {faqs.map((faq, i) => (
-        <details style="background:#0d1f3c;border:1px solid #1e3a5f;border-radius:12px;padding:1.25rem 1.5rem;cursor:pointer;">
+        <details style="background:#eeebe6;border:1px solid #d9d3cc;border-radius:12px;padding:1.25rem 1.5rem;cursor:pointer;">
           <summary style="font-weight:600;font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
             {faq.q}
-            <span style="color:#ffd700;font-size:1.25rem;flex-shrink:0;margin-left:1rem;">+</span>
+            <span style="color:#8aab8e;font-size:1.25rem;flex-shrink:0;margin-left:1rem;">+</span>
           </summary>
-          <p style="color:#a8b8d0;margin-top:1rem;line-height:1.7;">{faq.a}</p>
+          <p style="color:#7a7068;margin-top:1rem;line-height:1.7;">{faq.a}</p>
         </details>
       ))}
     </div>
 
-    <p style="text-align:center;margin-top:3rem;color:#a8b8d0;">
+    <p style="text-align:center;margin-top:3rem;color:#7a7068;">
       Still have questions? <a href="/contact">Contact us</a> — we're happy to help.
     </p>
   </div>
