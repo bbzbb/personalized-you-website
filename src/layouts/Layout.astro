@@ -57,8 +57,12 @@ const canonicalUrl = canonical ?? `https://www.personalized-you.com${Astro.url.p
         --accent-hover: #6d8e71;
         --text: #2c2c2c;
         --muted: #7a7068;
-        --star: #8aab8e;
+        --star: #c8a96e;
         --story-bg: #eeebe6;
+        --blush: #e8c4b8;
+        --gold: #c8a96e;
+        --lavender: #c5b8d4;
+        --cream: #fdf8f2;
       }
       body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
       a { color: var(--primary); text-decoration: none; }
@@ -68,10 +72,10 @@ const canonicalUrl = canonical ?? `https://www.personalized-you.com${Astro.url.p
       .nav-logo span { color: var(--primary); }
       .nav-links { display: flex; gap: 1.5rem; list-style: none; }
       .nav-links a { color: #2c2c2c; font-size: 0.95rem; transition: color 0.2s; }
-      .nav-links a:hover { color: var(--primary); text-decoration: none; }
+      .nav-links a:hover { color: var(--primary); text-decoration: underline; text-decoration-color: var(--primary); }
       .hamburger { display: none; background: none; border: none; cursor: pointer; color: #2c2c2c; font-size: 1.5rem; }
       main { flex: 1; }
-      footer { background: var(--surface); text-align: center; padding: 1.75rem; color: var(--muted); font-size: 0.875rem; }
+      footer { background: var(--surface); text-align: center; padding: 1.75rem; color: var(--muted); font-size: 0.875rem; border-top: 2px solid var(--gold); }
       footer a { color: var(--text); }
       footer a:hover { color: var(--primary); }
       @media (max-width: 768px) {
@@ -87,7 +91,8 @@ const canonicalUrl = canonical ?? `https://www.personalized-you.com${Astro.url.p
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
       <ul class="nav-links" id="nav-links">
         <li><a href="/">Home</a></li>
-        <li><a href="/bedtime-stories">Stories</a></li>
+        <li><a href="/bedtime-stories">Bedtime Stories</a></li>
+        <li><a href="/baby-album">Baby Album</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
