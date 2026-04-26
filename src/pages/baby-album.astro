@@ -1,12 +1,39 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Personalized Baby Photo Album",
+  "description": "A hardcover personalized baby photo album with your baby's name and birth date on the cover. 24 designed interior pages covering the first year. Ships from the US.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Personalized You"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "42",
+    "highPrice": "58",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "5"
+  }
+};
 ---
-<Layout title="Personalized Baby Photo Albums" description="Hardcover personalized baby photo albums for the first year. A keepsake they'll treasure forever. Shop on Etsy.">
+<Layout
+  title="Personalized Baby Photo Album — Hardcover Keepsake Book"
+  description="A hardcover personalized baby photo album with your baby name and birth date on the cover. 24 designed interior pages covering the first year. Ships from the US."
+  schema={schema}
+>
 
   <!-- Hero -->
   <section class="hero">
     <h1>The first year goes fast.<br><span>This is how you hold onto it.</span></h1>
-    <p>Personalized hardcover baby photo albums — handcrafted with love, built to last a lifetime.</p>
+    <p>Personalized hardcover photo albums for babies and toddlers ages 0 to 6 — handcrafted with love, built to last a lifetime.</p>
     <a href="https://www.etsy.com/shop/PersonalizedYouFinds" target="_blank" rel="noopener noreferrer" class="btn-primary"
       onmouseover="this.style.background='#4a6347'" onmouseout="this.style.background='#5C7A58'">Shop on Etsy</a>
   </section>
