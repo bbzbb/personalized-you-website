@@ -8,6 +8,12 @@ const posts = [
     date: 'April 2026',
     excerpt: "The story of how Personalized You started — and why we believe every child deserves to be the hero of their own adventure.",
   },
+  {
+    slug: 'how-to-preserve-babys-first-year',
+    title: "How to Preserve Your Baby's First Year (Before It Slips Away)",
+    date: 'April 2026',
+    excerpt: "The first year is the fastest year. Here are the most meaningful ways to capture and keep it — from photo albums to little rituals that stick.",
+  },
 ];
 ---
 <Layout title="Blog" description="Tips, insights, and stories from Personalized You.">
@@ -21,7 +27,7 @@ const posts = [
           <p style="color:var(--muted);font-size:0.875rem;margin-bottom:0.5rem;">{post.date} · 5 min read</p>
           <h2 style="color:var(--latte);font-size:1.3rem;font-weight:700;margin-bottom:0.75rem;">{post.title}</h2>
           <p style="color:var(--muted);line-height:1.6;">{post.excerpt}</p>
-          <p style="color:var(--sage);margin-top:1rem;font-weight:600;">Read more →</p>
+          <p style="color:#5C7A58;margin-top:1rem;font-weight:600;">Read more →</p>
         </a>
       ))}
     </div>
