@@ -8,24 +8,24 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- Formspree endpoint — register at formspree.io to activate -->
     <form id="contact-form" action="https://formspree.io/f/xzzbnwod" method="POST"
-      style="background:var(--beige);border:1px solid var(--border);border-radius:16px;padding:2rem;display:flex;flex-direction:column;gap:1.25rem;">
+      style="background:var(--beige);border:1px solid var(--border);border-radius:16px;padding:2rem;display:flex;flex-direction:column;gap:1.25rem;box-sizing:border-box;">
       <input type="hidden" name="_replyto" value="contact form submission" />
       <div>
         <label style="display:block;color:var(--muted);font-size:0.875rem;margin-bottom:0.4rem;" for="name">Your Name</label>
         <input id="name" name="name" type="text" required
-          style="width:100%;background:#ffffff;border:1px solid var(--border);border-radius:8px;padding:0.75rem 1rem;color:var(--text);font-size:1rem;outline:none;"
+          style="width:100%;box-sizing:border-box;background:#ffffff;border:1px solid var(--border);border-radius:8px;padding:0.75rem 1rem;color:var(--text);font-size:1rem;outline:none;"
           onfocus="this.style.borderColor='#5C7A58'" onblur="this.style.borderColor='#D8CBBB'" />
       </div>
       <div>
         <label style="display:block;color:var(--muted);font-size:0.875rem;margin-bottom:0.4rem;" for="email">Your Email</label>
         <input id="email" name="email" type="email" required
-          style="width:100%;background:#ffffff;border:1px solid var(--border);border-radius:8px;padding:0.75rem 1rem;color:var(--text);font-size:1rem;outline:none;"
+          style="width:100%;box-sizing:border-box;background:#ffffff;border:1px solid var(--border);border-radius:8px;padding:0.75rem 1rem;color:var(--text);font-size:1rem;outline:none;"
           onfocus="this.style.borderColor='#5C7A58'" onblur="this.style.borderColor='#D8CBBB'" />
       </div>
       <div>
         <label style="display:block;color:var(--muted);font-size:0.875rem;margin-bottom:0.4rem;" for="message">Message</label>
         <textarea id="message" name="message" rows="5" required
-          style="width:100%;background:#ffffff;border:1px solid var(--border);border-radius:8px;padding:0.75rem 1rem;color:var(--text);font-size:1rem;outline:none;resize:vertical;"
+          style="width:100%;box-sizing:border-box;background:#ffffff;border:1px solid var(--border);border-radius:8px;padding:0.75rem 1rem;color:var(--text);font-size:1rem;outline:none;resize:vertical;"
           onfocus="this.style.borderColor='#5C7A58'" onblur="this.style.borderColor='#D8CBBB'"></textarea>
       </div>
       <button type="submit"
