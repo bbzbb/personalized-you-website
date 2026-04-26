@@ -61,7 +61,7 @@ const canonicalUrl = canonical ?? `https://www.personalized-you.com${Astro.url.p
         --border: #D8CBBB;
       }
       body { font-family: system-ui, -apple-system, sans-serif; background: var(--cream); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
-      body::before { content: ''; position: fixed; top: -160; right: -80px; width: 63vw; max-width: 943px; height: 75vh; background: url('/images/blanket-overlay.png') no-repeat top right; background-size: contain; opacity: 0.87; pointer-events: none; z-index: 0; mix-blend-mode: multiply; filter: sepia(18%) saturate(80%) brightness(0.97); }
+      body::before { content: ''; position: fixed; top: 0; right: -80px; width: 63vw; max-width: 943px; height: 100vh; background: url('/images/blanket-overlay.png') no-repeat top right; background-size: contain; opacity: 0.87; pointer-events: none; z-index: 0; mix-blend-mode: multiply; filter: sepia(18%) saturate(80%) brightness(0.97); }
       main, nav, footer { position: relative; z-index: 1; }
       a { color: var(--sage); text-decoration: none; }
       a:hover { text-decoration: underline; }
