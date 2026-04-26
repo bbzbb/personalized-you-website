@@ -17,7 +17,7 @@ const posts = [
 
     <div style="display:flex;flex-direction:column;gap:1.5rem;">
       {posts.map(post => (
-        <a href={`/blog/${post.slug}`} style="display:block;background:var(--blue);border:1px solid var(--border);border-radius:16px;padding:2rem;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#7a9e7e'" onmouseout="this.style.borderColor='#d9cfc4'">
+        <a href={`/blog/${post.slug}`} style="display:block;background:var(--beige);border:1px solid var(--border);border-radius:16px;padding:2rem;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#93A98F'" onmouseout="this.style.borderColor='#D8CBBB'">
           <p style="color:var(--muted);font-size:0.875rem;margin-bottom:0.5rem;">{post.date} · 5 min read</p>
           <h2 style="color:var(--latte);font-size:1.3rem;font-weight:700;margin-bottom:0.75rem;">{post.title}</h2>
           <p style="color:var(--muted);line-height:1.6;">{post.excerpt}</p>

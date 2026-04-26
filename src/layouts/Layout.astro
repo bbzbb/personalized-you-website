@@ -47,18 +47,18 @@ const canonicalUrl = canonical ?? `https://www.personalized-you.com${Astro.url.p
     <style>
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       :root {
-        --cream: #fdf8f0;
-        --beige: #e8d9c5;
-        --sage: #7a9e7e;
-        --sage-hover: #5f8463;
-        --pink: #e8b4b8;
-        --yellow: #f5e6a3;
-        --lilac: #c9b8d8;
-        --latte: #b07d50;
-        --blue: #b8cce4;
-        --text: #3a2e28;
-        --muted: #7a6a5a;
-        --border: #d9cfc4;
+        --cream: #FAF7F2;
+        --beige: #F1E7DA;
+        --surface-2: #E8DCCB;
+        --sage: #93A98F;
+        --sage-hover: #7F967B;
+        --pink: #D8A7A7;
+        --pink-hover: #C89292;
+        --lilac: #CBB8D9;
+        --latte: #5C4B43;
+        --text: #5C4B43;
+        --muted: #7A6A63;
+        --border: #D8CBBB;
       }
       body { font-family: system-ui, -apple-system, sans-serif; background: var(--cream); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
       a { color: var(--sage); text-decoration: none; }
@@ -71,7 +71,7 @@ const canonicalUrl = canonical ?? `https://www.personalized-you.com${Astro.url.p
       .nav-links a:hover { color: var(--sage); text-decoration: underline; text-decoration-color: var(--sage); }
       .hamburger { display: none; background: none; border: none; cursor: pointer; color: var(--text); font-size: 1.5rem; }
       main { flex: 1; }
-      footer { background: var(--beige); text-align: center; padding: 1.75rem; color: var(--muted); font-size: 0.875rem; border-top: 3px solid var(--latte); }
+      footer { background: var(--beige); text-align: center; padding: 1.75rem; color: var(--muted); font-size: 0.875rem; border-top: 2px solid var(--border); }
       footer a { color: var(--muted); }
       footer a:hover { color: var(--sage); }
       @media (max-width: 768px) {
