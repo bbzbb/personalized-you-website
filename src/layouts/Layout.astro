@@ -65,7 +65,7 @@ const canonicalUrl = canonical ?? `https://www.personalized-you.com${Astro.url.p
       main, nav, footer { position: relative; z-index: 1; }
       a { color: var(--sage); text-decoration: none; }
       a:hover { text-decoration: underline; }
-      nav { background: var(--beige); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 2px 8px rgba(44,44,44,0.08); }
+      nav { background: var(--beige); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 2px 8px rgba(44,44,44,0.08); position: relative; z-index: 1000; }
       .nav-logo { font-size: 1.25rem; font-weight: 800; color: var(--latte); letter-spacing: -0.01em; }
       .nav-logo span { color: var(--latte); }
       .nav-links { display: flex; gap: 1.5rem; list-style: none; }
@@ -78,7 +78,7 @@ const canonicalUrl = canonical ?? `https://www.personalized-you.com${Astro.url.p
       footer a:hover { color: var(--sage); }
       @media (max-width: 768px) {
         .hamburger { display: block; }
-        .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--beige); flex-direction: column; padding: 1rem 2rem; gap: 1rem; border-top: 1px solid rgba(44,44,44,0.1); z-index: 100; }
+        .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--beige); flex-direction: column; padding: 1rem 2rem; gap: 1rem; border-top: 1px solid rgba(44,44,44,0.1); z-index: 1000; box-shadow: 0 8px 24px rgba(44,44,44,0.12); }
         .nav-links.open { display: flex; }
         body::before { width: 40vw; right: 0; opacity: 0.87; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%); mask-image: linear-gradient(to right, transparent 0%, black 30%); }
       }
